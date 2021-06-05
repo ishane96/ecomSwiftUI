@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import Firebase
+import GoogleSignIn
 
 struct LoginView: View {
     
     @State var signUpTapped = false
     @State var togglePw = true
+    @State var googleSignInTapped = false
     
     @StateObject var vm = LoginVM()
     
@@ -119,10 +122,9 @@ struct LoginView: View {
                         VStack (spacing:20){
                             HStack {
                                 Spacer()
-                                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                                Button(action: googleSignIn, label: {
                                     Image("google")
                                         .resizable()
-                                        //                                        .aspectRatio(contentMode: .fit)
                                         .frame(height:62)
                                 })
                                 Spacer()
@@ -149,6 +151,13 @@ struct LoginView: View {
     }
     func loginCall(){
         vm.login ()
+    }
+    
+    func googleSignIn(){
+        self.googleSignInTapped = true
+        GIDSignIn.sharedInstance().presentingViewController = UIApplication.shared.windows.first?.rootViewController
+        
+        GIDSignIn.sharedInstance().signIn()
     }
 }
 

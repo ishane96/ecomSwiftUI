@@ -341,6 +341,7 @@
 				5CB369B1265EC40D0097693B /* Frameworks */,
 				5CB369B2265EC40D0097693B /* Resources */,
 				642DD29A754A5FB6397F3B15 /* [CP] Embed Pods Frameworks */,
+				D56E14F87AB23C8FFADBF487 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -425,6 +426,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ecommerceSwiftUI/Pods-ecommerceSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D56E14F87AB23C8FFADBF487 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ecommerceSwiftUI/Pods-ecommerceSwiftUI-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ecommerceSwiftUI/Pods-ecommerceSwiftUI-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ecommerceSwiftUI/Pods-ecommerceSwiftUI-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FC59236EE3E6B040A79C2619 /* [CP] Check Pods Manifest.lock */ = {

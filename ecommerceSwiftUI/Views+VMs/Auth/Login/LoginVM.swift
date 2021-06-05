@@ -7,6 +7,7 @@
 
 import Foundation
 import FirebaseAuth
+import GoogleSignIn
 
 class LoginVM: ObservableObject {
     
@@ -32,6 +33,11 @@ class LoginVM: ObservableObject {
                 ViewRouter.shared.currentRoot = .home
             }
         }
+        
+        
+    }
+    
+    func googleSignIn(completion: @escaping CompletionHandler){
         
     }
     

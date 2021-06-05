@@ -13,4 +13,6 @@ target 'ecommerceSwiftUI' do
   pod 'Firebase/Auth'
   pod 'SDWebImage'
   pod 'SDWebImageSwiftUI'
+  pod 'GoogleSignIn'
+  pod 'RappleProgressHUD'
 end
