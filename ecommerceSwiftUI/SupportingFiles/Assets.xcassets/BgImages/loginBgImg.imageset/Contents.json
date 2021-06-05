@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "tusik-only-frzYqeR8CkQ-unsplash.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "tusik-only-frzYqeR8CkQ-unsplash-1.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "tusik-only-frzYqeR8CkQ-unsplash-2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
